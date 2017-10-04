@@ -49,6 +49,7 @@ def tox_runtest_pre(venv):
                 detach=True,
                 publish_all_ports=True,
                 environment=environment,
+                remove=True,
             )
 
         conf._docker_containers.append(container)
